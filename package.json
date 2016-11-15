@@ -1,0 +1,35 @@
+{
+  "name": "simon",
+  "version": "1.0.0",
+  "description": "simon says",
+  "main": "./simon.js",
+  "scripts": {
+    "point": "babel-node ./simon.js",
+    "b": "babel-node"
+  },
+  "author": "Emile Choghi",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "latest",
+    "babel-preset-es2015-node5": "latest",
+    "chalk": "latest",
+    "express": "latest"
+  },
+  "bin": {
+    "point": "./simon.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node5"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "latest",
+    "gulp": "latest",
+    "gulp-babel": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  }
+}
