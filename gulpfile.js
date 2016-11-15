@@ -12,7 +12,7 @@ gulp.task('js', function () {
 		}))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./js'));
+        .pipe(gulp.dest('./js/min'));
 });
 
 gulp.task('sass', function () {
@@ -20,7 +20,7 @@ gulp.task('sass', function () {
         .pipe(sass())
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./styles'));
+        .pipe(gulp.dest('./styles/min'));
 });
 
 gulp.task('default', ['js', 'sass'], function() {
